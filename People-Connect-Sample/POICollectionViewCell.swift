@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import QuartzCore
 
 class POICollectionViewCell: UICollectionViewCell {
     
+    lazy var card: UIView = UIView()
     lazy var numberLabel: UILabel = UILabel()
     lazy var leftLabelStackView: UIStackView = UIStackView()
     lazy var rightLabelStackView: UIStackView = UIStackView()
@@ -32,24 +34,37 @@ class POICollectionViewCell: UICollectionViewCell {
     
     func setUpCell(poi: POI){
         
-       self.contentView.layer.cornerRadius = 6
-       self.contentView.backgroundColor = .white
-       
-       self.contentView.addSubview(numberLabel)
-       self.contentView.addSubview(leftLabelStackView)
-       self.contentView.addSubview(rightLabelStackView)
+       self.card.layer.cornerRadius = 9
+       self.card.layer.masksToBounds = false
+       self.card.backgroundColor = .white
+       self.card.layer.shadowRadius = 1
+       self.card.layer.shadowColor = UIColor(red: 19/255, green: 40/255, blue: 54/255, alpha: 0.2).cgColor
+       self.card.layer.zPosition = 1
+       self.card.layer.shadowOffset = CGSize(width: 0, height: 2)
+       self.card.layer.shadowOpacity = 1
+        
+        
+       self.contentView.addSubview(card)
+       self.card.addSubview(numberLabel)
+       self.card.addSubview(leftLabelStackView)
+       self.card.addSubview(rightLabelStackView)
        //self.contentView.addSubview(viewPropertyDetailsButton)
         
+        self.card.translatesAutoresizingMaskIntoConstraints = false
          self.numberLabel.translatesAutoresizingMaskIntoConstraints = false
          self.leftLabelStackView.translatesAutoresizingMaskIntoConstraints = false
          self.rightLabelStackView.translatesAutoresizingMaskIntoConstraints = false
         // self.viewPropertyDetailsButton.translatesAutoresizingMaskIntoConstraints = false
         
-        
+        self.card.widthAnchor.constraint(equalTo: self.contentView.widthAnchor, multiplier: 0.97).isActive = true
+        self.card.heightAnchor.constraint(equalTo: self.contentView.heightAnchor, multiplier: 0.97).isActive = true
+        self.card.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor).isActive = true
+        self.card.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
+
         self.numberLabel.widthAnchor.constraint(equalToConstant: 30).isActive = true
         self.numberLabel.heightAnchor.constraint(equalToConstant: 22).isActive = true
-        self.numberLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 15).isActive = true
-        self.numberLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 15).isActive = true
+        self.numberLabel.topAnchor.constraint(equalTo: self.card.topAnchor, constant: 15).isActive = true
+        self.numberLabel.leadingAnchor.constraint(equalTo: self.card.leadingAnchor, constant: 15).isActive = true
         
         self.leftLabelStackView.widthAnchor.constraint(equalToConstant: 130).isActive = true
         self.leftLabelStackView.heightAnchor.constraint(equalToConstant: 30).isActive = true
@@ -59,7 +74,7 @@ class POICollectionViewCell: UICollectionViewCell {
         self.rightLabelStackView.widthAnchor.constraint(equalToConstant: 130).isActive = true
         self.rightLabelStackView.heightAnchor.constraint(equalToConstant: 30).isActive = true
         self.rightLabelStackView.topAnchor.constraint(equalTo: self.numberLabel.bottomAnchor, constant: 15).isActive = true
-        self.rightLabelStackView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -15).isActive = true
+        self.rightLabelStackView.trailingAnchor.constraint(equalTo: self.card.trailingAnchor, constant: -15).isActive = true
         
         
         self.leftLabelStackView.axis = .vertical

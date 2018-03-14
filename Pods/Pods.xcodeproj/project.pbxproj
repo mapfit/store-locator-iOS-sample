@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -57,6 +57,8 @@
 		ABB5D348FF4A31E81CB423FDB95FC758 /* MFTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DFBA9E677C8BD562F2DF8F7330E58 /* MFTManager.swift */; };
 		AD1DB347BA845750A5BC3AE6722DD790 /* MFTDirectionsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4530F09A0FE819D0A5D2AC7409679 /* MFTDirectionsOptions.swift */; };
 		B7D1B64E892039D6618F1212CA018BED /* anchor.png in Resources */ = {isa = PBXBuildFile; fileRef = F0396FB96CB733CE53DF97BC5DA7C23E /* anchor.png */; };
+		BF126C6B2059B6120043DB66 /* mapfit-day.yaml in Resources */ = {isa = PBXBuildFile; fileRef = BF126C6A2059B6120043DB66 /* mapfit-day.yaml */; };
+		BF126C6C2059B6120043DB66 /* mapfit-day.yaml in Resources */ = {isa = PBXBuildFile; fileRef = BF126C6A2059B6120043DB66 /* mapfit-day.yaml */; };
 		BF603E6B3326D391FF5CB27D25507E32 /* OpenSans-Italic.woff in Resources */ = {isa = PBXBuildFile; fileRef = 504D1D27BF2AFA3DC79F6AF67536016C /* OpenSans-Italic.woff */; };
 		C1805370A13205763DF577E03CC0FBDC /* MFTMapOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6243FE1DAEA0B3968DE94D0D8C9A8490 /* MFTMapOptions.swift */; };
 		C18CF018DE6AEA6C3AFAB444C9671301 /* OpenSans-Light.woff in Resources */ = {isa = PBXBuildFile; fileRef = 68F11C92050981FF05F9A7D8A7EE5E8A /* OpenSans-Light.woff */; };
@@ -71,7 +73,6 @@
 		D7CDC56B0977C7120A06C45650073BCB /* mapfit-night.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 197E82C681AB7BF784047DF5D3FD7A84 /* mapfit-night.yaml */; };
 		D808704E0E9A873A83BF72980B1EA80F /* Compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C784C08E9691ACB586BA7E33347530C /* Compass.png */; };
 		D8136ED59B3CDBD69DCC84BA7D6ACF14 /* refill-gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BE48D9CF52CBE620D54647A39090F5F /* refill-gray@2x.png */; };
-		E55DE9D4BDF37CA0E7B5E95F60D31794 /* mapfit-day.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 73A8863EAD6B7A9147360C9F40F40403 /* mapfit-day.yaml */; };
 		E57D4C08713C8FC2CDECF5732F041DCF /* mapfit-grayscale.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 23B7D5DE9FC1B0AF91C33210BC92C186 /* mapfit-grayscale.yaml */; };
 		E64E46A91E5DD56C94C7E14645FC9AFD /* Mapfit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F59C279CA230D73951C543376D9F4 /* Mapfit-dummy.m */; };
 		E801DE96CDF26A689F743C67648DA504 /* Pods-People-Connect-SampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3A16A19D0B80667302753A7022AC44 /* Pods-People-Connect-SampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -104,25 +105,25 @@
 
 /* Begin PBXFileReference section */
 		02E1D356687B71EA40A7387E65113C97 /* Pods-People-Connect-SampleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-People-Connect-SampleUITests-resources.sh"; sourceTree = "<group>"; };
-		0426B1CE8448CBF1CB308C4716204694 /* Montserrat-Regular.woff */ = {isa = PBXFileReference; includeInIndex = 1; name = "Montserrat-Regular.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/Montserrat-Regular.woff"; sourceTree = "<group>"; };
+		0426B1CE8448CBF1CB308C4716204694 /* Montserrat-Regular.woff */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Montserrat-Regular.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/Montserrat-Regular.woff"; sourceTree = "<group>"; };
 		046B27AFFE5F6C56E509EB99AFBAEAD6 /* Pods-People-Connect-SampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-People-Connect-SampleUITests-dummy.m"; sourceTree = "<group>"; };
 		09AB14B4BDC9C6B759FA18099D397B3D /* zoomOut@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "zoomOut@3x.png"; path = "iOS-SDK/houseStyles.bundle/zoomOut@3x.png"; sourceTree = "<group>"; };
 		0BB45D8C1B4379C97669B7E83494842B /* reCenter.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = reCenter.png; path = "iOS-SDK/houseStyles.bundle/reCenter.png"; sourceTree = "<group>"; };
 		0E9725831672B66AA308E072BD65E9A8 /* Pods-People-Connect-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-People-Connect-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		108D31103DDF4AD26BB20508821AD6F4 /* Pods-People-Connect-Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-People-Connect-Sample-dummy.m"; sourceTree = "<group>"; };
 		132A8C233ADD4149A160324A7B925234 /* Zoom.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Zoom.png; path = "iOS-SDK/houseStyles.bundle/Zoom.png"; sourceTree = "<group>"; };
-		197E82C681AB7BF784047DF5D3FD7A84 /* mapfit-night.yaml */ = {isa = PBXFileReference; includeInIndex = 1; name = "mapfit-night.yaml"; path = "iOS-SDK/houseStyles.bundle/mapfit-night.yaml"; sourceTree = "<group>"; };
+		197E82C681AB7BF784047DF5D3FD7A84 /* mapfit-night.yaml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "mapfit-night.yaml"; path = "iOS-SDK/houseStyles.bundle/mapfit-night.yaml"; sourceTree = "<group>"; };
 		1A0615142C8E9C4440C436A60CBC183E /* Mapfit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Mapfit.modulemap; sourceTree = "<group>"; };
-		1FCE1DD7492DB46616E5ECD7ABE52B58 /* Pods_People_Connect_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_People_Connect_Sample.framework; path = "Pods-People-Connect-Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23B7D5DE9FC1B0AF91C33210BC92C186 /* mapfit-grayscale.yaml */ = {isa = PBXFileReference; includeInIndex = 1; name = "mapfit-grayscale.yaml"; path = "iOS-SDK/houseStyles.bundle/mapfit-grayscale.yaml"; sourceTree = "<group>"; };
+		1FCE1DD7492DB46616E5ECD7ABE52B58 /* Pods_People_Connect_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_People_Connect_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B7D5DE9FC1B0AF91C33210BC92C186 /* mapfit-grayscale.yaml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "mapfit-grayscale.yaml"; path = "iOS-SDK/houseStyles.bundle/mapfit-grayscale.yaml"; sourceTree = "<group>"; };
 		251CD4444BEB0C8C6C28A44CD5D2C6CE /* UIKitExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIKitExtensions.swift; path = "iOS-SDK/Extensions/UIKitExtensions.swift"; sourceTree = "<group>"; };
 		252C3697FA82C52755A8C838D96F01F5 /* Zoom In.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Zoom In.png"; path = "iOS-SDK/houseStyles.bundle/Zoom In.png"; sourceTree = "<group>"; };
 		28DEC4D5959D28962371B7B668751D76 /* Pods-People-Connect-SampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-People-Connect-SampleUITests.modulemap"; sourceTree = "<group>"; };
 		29F2BCF625DAA6827E17246E52D5A3A5 /* Zoom Out.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Zoom Out.png"; path = "iOS-SDK/houseStyles.bundle/Zoom Out.png"; sourceTree = "<group>"; };
-		2C608729768968ECC731624203033501 /* Pods_People_Connect_SampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_People_Connect_SampleUITests.framework; path = "Pods-People-Connect-SampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C608729768968ECC731624203033501 /* Pods_People_Connect_SampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_People_Connect_SampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE15519718109EF6F176A468C3EFC45 /* Watermark_Night_Lg.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Watermark_Night_Lg.png; path = "iOS-SDK/houseStyles.bundle/Watermark_Night_Lg.png"; sourceTree = "<group>"; };
 		33B73392EBBB61AF5482BEBB33362E05 /* Pods-People-Connect-Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-People-Connect-Sample-acknowledgements.plist"; sourceTree = "<group>"; };
-		34C5180AD5E042364F6594EE7ACEAED0 /* OpenSans-SemiboldItalic.woff */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-SemiboldItalic.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-SemiboldItalic.woff"; sourceTree = "<group>"; };
+		34C5180AD5E042364F6594EE7ACEAED0 /* OpenSans-SemiboldItalic.woff */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "OpenSans-SemiboldItalic.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-SemiboldItalic.woff"; sourceTree = "<group>"; };
 		34C7E5A716C18D0C9A5AC3266FD89F4F /* zoomIn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "zoomIn@3x.png"; path = "iOS-SDK/houseStyles.bundle/zoomIn@3x.png"; sourceTree = "<group>"; };
 		3954C0CD5877450F8E5E8D1E51E6974E /* Pods-People-Connect-SampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-People-Connect-SampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		413D2079517A44A2C9CE47473603EA26 /* MFTMapView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTMapView.swift; path = "iOS-SDK/MFTClasses/MFTMapView.swift"; sourceTree = "<group>"; };
@@ -132,49 +133,49 @@
 		4C9E246BA3DD052948A3BD665443E429 /* MFTGeocoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTGeocoder.swift; path = "iOS-SDK/API/MFTGeocoder.swift"; sourceTree = "<group>"; };
 		4D279842F6004B422EBC3A28B7B87228 /* ZoomBacking_iOS.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ZoomBacking_iOS.png; path = "iOS-SDK/houseStyles.bundle/ZoomBacking_iOS.png"; sourceTree = "<group>"; };
 		4EE925E6C67BDF261B900C56F932C5D4 /* CardBacking.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CardBacking.png; path = "iOS-SDK/houseStyles.bundle/CardBacking.png"; sourceTree = "<group>"; };
-		4F5559DDCECA616EF80B2E2B2B811A5E /* Mapfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Mapfit.framework; path = Mapfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5559DDCECA616EF80B2E2B2B811A5E /* Mapfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mapfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC4530F09A0FE819D0A5D2AC7409679 /* MFTDirectionsOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTDirectionsOptions.swift; path = "iOS-SDK/MFTClasses/MFTDirectionsOptions.swift"; sourceTree = "<group>"; };
-		504D1D27BF2AFA3DC79F6AF67536016C /* OpenSans-Italic.woff */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Italic.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-Italic.woff"; sourceTree = "<group>"; };
+		504D1D27BF2AFA3DC79F6AF67536016C /* OpenSans-Italic.woff */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "OpenSans-Italic.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-Italic.woff"; sourceTree = "<group>"; };
 		534EACA39E17B0A7688A4AF8DB8307BC /* Pods-People-Connect-SampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-People-Connect-SampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E8243F7CFB7B8A318843774CADBED03 /* MFTLatLngBounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTLatLngBounds.swift; path = "iOS-SDK/MFTClasses/MFTLatLngBounds.swift"; sourceTree = "<group>"; };
-		5F71D8EEF972217D2857A65889AE6DBB /* geofimap.eot */ = {isa = PBXFileReference; includeInIndex = 1; name = geofimap.eot; path = "iOS-SDK/houseStyles.bundle/fonts/geofimap.eot"; sourceTree = "<group>"; };
+		5F71D8EEF972217D2857A65889AE6DBB /* geofimap.eot */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = geofimap.eot; path = "iOS-SDK/houseStyles.bundle/fonts/geofimap.eot"; sourceTree = "<group>"; };
 		5FFFFEED705DFD70ACCBC18972D25EB8 /* Pods-People-Connect-Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-People-Connect-Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		619FD7DF760829342B4AE763F43F286C /* Pods-People-Connect-SampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-People-Connect-SampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6243FE1DAEA0B3968DE94D0D8C9A8490 /* MFTMapOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTMapOptions.swift; path = "iOS-SDK/MFTClasses/MFTMapOptions.swift"; sourceTree = "<group>"; };
 		624FDCEB7329D7C92EC868C4E9B2414A /* MFTZoomButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTZoomButtonView.swift; path = "iOS-SDK/MFTClasses/MFTZoomButtonView.swift"; sourceTree = "<group>"; };
 		651BB9BB57C51E66939CF51639737286 /* Pods-People-Connect-SampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-People-Connect-SampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		68F11C92050981FF05F9A7D8A7EE5E8A /* OpenSans-Light.woff */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Light.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-Light.woff"; sourceTree = "<group>"; };
+		68F11C92050981FF05F9A7D8A7EE5E8A /* OpenSans-Light.woff */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "OpenSans-Light.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-Light.woff"; sourceTree = "<group>"; };
 		69B82A1006114253407C8756EE5E77E5 /* MinusButton.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = MinusButton.png; path = "iOS-SDK/houseStyles.bundle/MinusButton.png"; sourceTree = "<group>"; };
 		6B10F5EC7995D0ED82FD4A1892B20D47 /* MFTMarker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTMarker.swift; path = "iOS-SDK/MFTClasses/MFTMarker.swift"; sourceTree = "<group>"; };
-		73A8863EAD6B7A9147360C9F40F40403 /* mapfit-day.yaml */ = {isa = PBXFileReference; includeInIndex = 1; name = "mapfit-day.yaml"; path = "iOS-SDK/houseStyles.bundle/mapfit-day.yaml"; sourceTree = "<group>"; };
 		7458DAB389DF0B5D2B1EFB73B9149D96 /* Watermark_Night_Sm.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Watermark_Night_Sm.png; path = "iOS-SDK/houseStyles.bundle/Watermark_Night_Sm.png"; sourceTree = "<group>"; };
 		74F4AF3CC057BDF71A4889FCC55419FC /* Pods-People-Connect-Sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-People-Connect-Sample-umbrella.h"; sourceTree = "<group>"; };
 		7C784C08E9691ACB586BA7E33347530C /* Compass.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Compass.png; path = "iOS-SDK/houseStyles.bundle/Compass.png"; sourceTree = "<group>"; };
 		7D8AD2492860FDB1BF577D6E1C5A3875 /* MFTPolyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTPolyline.swift; path = "iOS-SDK/MFTClasses/MFTPolyline.swift"; sourceTree = "<group>"; };
 		7DFAD537B0F7C8781A92B5C3E8B169BB /* BundleExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BundleExtension.swift; path = "iOS-SDK/Extensions/BundleExtension.swift"; sourceTree = "<group>"; };
-		8214C87569F269378C0858FF9B09FAC3 /* geofimap.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = geofimap.svg; path = "iOS-SDK/houseStyles.bundle/fonts/geofimap.svg"; sourceTree = "<group>"; };
-		89BBA7A57532BFFA4FE1E30D5E87A181 /* houseStyles.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = houseStyles.bundle; path = "Mapfit-houseStyles.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8214C87569F269378C0858FF9B09FAC3 /* geofimap.svg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = geofimap.svg; path = "iOS-SDK/houseStyles.bundle/fonts/geofimap.svg"; sourceTree = "<group>"; };
+		89BBA7A57532BFFA4FE1E30D5E87A181 /* houseStyles.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = houseStyles.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE48D9CF52CBE620D54647A39090F5F /* refill-gray@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "refill-gray@2x.png"; path = "iOS-SDK/houseStyles.bundle/images/refill-gray@2x.png"; sourceTree = "<group>"; };
 		90AB74418C4ED0CCA6D82ED49988E34B /* MFTAnnotations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTAnnotations.swift; path = "iOS-SDK/MFTClasses/MFTAnnotations.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98A87C9C2C4DC0717798E947A4564A81 /* MFTMapViewGestrues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTMapViewGestrues.swift; path = "iOS-SDK/MFTClasses/MFTMapViewGestrues.swift"; sourceTree = "<group>"; };
-		9B2B837C8DCECE853A8836E47CB7641D /* OpenSans-Bold.woff */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Bold.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-Bold.woff"; sourceTree = "<group>"; };
+		9B2B837C8DCECE853A8836E47CB7641D /* OpenSans-Bold.woff */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "OpenSans-Bold.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-Bold.woff"; sourceTree = "<group>"; };
 		9B6FC8D711B174144F07303ADCB94DB9 /* APPLFrameworkExtentions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APPLFrameworkExtentions.swift; path = "iOS-SDK/Extensions/APPLFrameworkExtentions.swift"; sourceTree = "<group>"; };
 		9BC0E0C10E7063B60FC7A9609C185208 /* MFTPolygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTPolygon.swift; path = "iOS-SDK/MFTClasses/MFTPolygon.swift"; sourceTree = "<group>"; };
 		9D4F59C279CA230D73951C543376D9F4 /* Mapfit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mapfit-dummy.m"; sourceTree = "<group>"; };
 		9DF0F59873462EDE998193F8F3FE44B7 /* DecodeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodeFunctions.swift; path = "iOS-SDK/Extensions/DecodeFunctions.swift"; sourceTree = "<group>"; };
 		A041ED96C16EBBD2D0BB10DB36D35F25 /* TangramMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TangramMap.framework; path = Release/TangramMap.framework; sourceTree = "<group>"; };
 		A69DFBA9E677C8BD562F2DF8F7330E58 /* MFTManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTManager.swift; path = "iOS-SDK/Helper/MFTManager.swift"; sourceTree = "<group>"; };
-		AC1FCCEE2C43DFA65C42D492570BD22A /* Apache License.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = "Apache License.txt"; path = "iOS-SDK/houseStyles.bundle/fonts/Apache License.txt"; sourceTree = "<group>"; };
+		AC1FCCEE2C43DFA65C42D492570BD22A /* Apache License.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Apache License.txt"; path = "iOS-SDK/houseStyles.bundle/fonts/Apache License.txt"; sourceTree = "<group>"; };
 		B10F64446B12EFD160EF9B85A446A2A2 /* ReCenter_OFF.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ReCenter_OFF.png; path = "iOS-SDK/houseStyles.bundle/ReCenter_OFF.png"; sourceTree = "<group>"; };
 		B1B1F25AC18E232B06DC0EF79B437449 /* Watermark_Day_Lg.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Watermark_Day_Lg.png; path = "iOS-SDK/houseStyles.bundle/Watermark_Day_Lg.png"; sourceTree = "<group>"; };
 		B62C77B9B0CB6E7B25BFB4716BD55DD7 /* Controls.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Controls.png; path = "iOS-SDK/houseStyles.bundle/Controls.png"; sourceTree = "<group>"; };
 		BB33C68348F76BE85687DD7340D2017C /* Mapfit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mapfit.xcconfig; sourceTree = "<group>"; };
+		BF126C6A2059B6120043DB66 /* mapfit-day.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mapfit-day.yaml"; sourceTree = "<group>"; };
 		C09F563862C54F35C6942A0A89E80343 /* MFTPlaceInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTPlaceInfoView.swift; path = "iOS-SDK/MFTClasses/MFTPlaceInfoView.swift"; sourceTree = "<group>"; };
-		C2BF5E0512A5C24ED0874C2D2B8758CE /* OpenSans-Semibold.woff */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Semibold.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-Semibold.woff"; sourceTree = "<group>"; };
+		C2BF5E0512A5C24ED0874C2D2B8758CE /* OpenSans-Semibold.woff */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "OpenSans-Semibold.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-Semibold.woff"; sourceTree = "<group>"; };
 		C4249092AC91C19D64FF89CDC92BBCE4 /* Pods-People-Connect-Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-People-Connect-Sample.modulemap"; sourceTree = "<group>"; };
-		C488C81DFED6D8559AF2165962C9BDBD /* geofimap.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = geofimap.ttf; path = "iOS-SDK/houseStyles.bundle/fonts/geofimap.ttf"; sourceTree = "<group>"; };
+		C488C81DFED6D8559AF2165962C9BDBD /* geofimap.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = geofimap.ttf; path = "iOS-SDK/houseStyles.bundle/fonts/geofimap.ttf"; sourceTree = "<group>"; };
 		CFE21809D18FD7D027A43B172D9D4D8E /* Pods-People-Connect-SampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-People-Connect-SampleUITests-frameworks.sh"; sourceTree = "<group>"; };
 		CFE9FD40E237818767BF94A1FB6036F5 /* zoomIn@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "zoomIn@2x.png"; path = "iOS-SDK/houseStyles.bundle/zoomIn@2x.png"; sourceTree = "<group>"; };
 		D02A309AFE8730AA39F97FA382030D62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,7 +201,7 @@
 		F539D630E9F853DC2D628796A7D2C1E8 /* MFTThemes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTThemes.swift; path = "iOS-SDK/Helper/MFTThemes.swift"; sourceTree = "<group>"; };
 		F8000BA2C5A0D0E8599EEF3455DB6A4C /* zoomOut.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = zoomOut.png; path = "iOS-SDK/houseStyles.bundle/zoomOut.png"; sourceTree = "<group>"; };
 		F966CCE39F3B08D45816D61C3E3CD04E /* MFTAPIObjects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFTAPIObjects.swift; path = "iOS-SDK/API/MFTAPIObjects.swift"; sourceTree = "<group>"; };
-		FD29BED3AF48946C0988FB4FE430E3C6 /* OpenSans-Regular.woff */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Regular.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-Regular.woff"; sourceTree = "<group>"; };
+		FD29BED3AF48946C0988FB4FE430E3C6 /* OpenSans-Regular.woff */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "OpenSans-Regular.woff"; path = "iOS-SDK/houseStyles.bundle/fonts/OpenSans-Regular.woff"; sourceTree = "<group>"; };
 		FDA92E181E5EA46B682E0F248D78E972 /* zoomIn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = zoomIn.png; path = "iOS-SDK/houseStyles.bundle/zoomIn.png"; sourceTree = "<group>"; };
 		FF4D364B17C9E7F7416D10E2114CA515 /* refill@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "refill@2x.png"; path = "iOS-SDK/houseStyles.bundle/images/refill@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,7 +266,6 @@
 			children = (
 				AE8212967A61EB8D374918FAD4F7EEB1 /* Frameworks */,
 			);
-			name = "Tetragon-mobile";
 			path = "Tetragon-mobile";
 			sourceTree = "<group>";
 		};
@@ -331,7 +331,7 @@
 				5F71D8EEF972217D2857A65889AE6DBB /* geofimap.eot */,
 				8214C87569F269378C0858FF9B09FAC3 /* geofimap.svg */,
 				C488C81DFED6D8559AF2165962C9BDBD /* geofimap.ttf */,
-				73A8863EAD6B7A9147360C9F40F40403 /* mapfit-day.yaml */,
+				BF126C6A2059B6120043DB66 /* mapfit-day.yaml */,
 				23B7D5DE9FC1B0AF91C33210BC92C186 /* mapfit-grayscale.yaml */,
 				197E82C681AB7BF784047DF5D3FD7A84 /* mapfit-night.yaml */,
 				DC575E2D6C73EDFA05FFB18088FA3C28 /* menu.png */,
@@ -426,7 +426,6 @@
 				5D808AF568E737283C54A0498EEB6CF2 /* Resources */,
 				478F32DDBA4EB49DFB2BC16784FE9A29 /* Support Files */,
 			);
-			name = Mapfit;
 			path = Mapfit;
 			sourceTree = "<group>";
 		};
@@ -582,6 +581,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF126C6B2059B6120043DB66 /* mapfit-day.yaml in Resources */,
 				7FA3A1CAC1772F02E19CE6D1207289FA /* houseStyles.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,7 +598,6 @@
 				D58ECD3F3880935255BCAC3D7CF62CBC /* geofimap.eot in Resources */,
 				9C3351444CCEABE17FDAB0147138319C /* geofimap.svg in Resources */,
 				CDE3E66F1B40696DCA2F5FBFBDE07075 /* geofimap.ttf in Resources */,
-				E55DE9D4BDF37CA0E7B5E95F60D31794 /* mapfit-day.yaml in Resources */,
 				E57D4C08713C8FC2CDECF5732F041DCF /* mapfit-grayscale.yaml in Resources */,
 				D7CDC56B0977C7120A06C45650073BCB /* mapfit-night.yaml in Resources */,
 				70FC0448A3AB851870A2383A96118832 /* menu.png in Resources */,
@@ -627,6 +626,7 @@
 				E9486818016AAC07DA5B4CCB0239AA62 /* zoomIn.png in Resources */,
 				FFD89A596339717C08A83E8794188AA0 /* zoomIn@2x.png in Resources */,
 				EEBA6E2517110EC190996571F5722AB2 /* zoomIn@3x.png in Resources */,
+				BF126C6C2059B6120043DB66 /* mapfit-day.yaml in Resources */,
 				7D7C92B751D1EF09C937B078EDA64CF6 /* zoomOut.png in Resources */,
 				A99F51BE0E590FDBB0EA9E6CFA44F8E2 /* zoomOut@2x.png in Resources */,
 				9EEA2CF28C9541446B4820664142811C /* zoomOut@3x.png in Resources */,

@@ -165,7 +165,7 @@ open class MFTMapView: UIView {
     //attribution button bottom constraint
     var initialAttributionBottomConstraintConstant: CGFloat = -146.5
     var pressedAttributionBottomConstraintConstant: CGFloat = -165
-    var initialLegalButtonBottomConstraintConstant: CGFloat = -160
+    var initialLegalButtonBottomConstraintConstant: CGFloat = -110
     var pressedLegalButtonBottomConstraintConstant: CGFloat = -140
     
     var attributionButtonBottomConstraint = NSLayoutConstraint()
@@ -332,9 +332,9 @@ open class MFTMapView: UIView {
             zoomL = mapOptions.getMinZoomLevel()
         }
         
-        self.zoom = zoomL
+        //self.zoom = zoomL
         mapView.animate(toZoomLevel: zoomL, withDuration: duration)
-        self.zoom = zoomL
+        //self.zoom = zoomL
     }
 
     /**
@@ -363,7 +363,6 @@ open class MFTMapView: UIView {
      */
     
     public func setTilt(tiltValue: Float, duration: Float){
-        self.tilt = tiltValue
         mapView.animate(toTilt: tiltValue, withDuration: duration)
     }
     
@@ -393,7 +392,6 @@ open class MFTMapView: UIView {
      */
     
     public func setRotation(rotationValue: Float, duration: Float){
-        self.rotation = rotationValue
         mapView.animate(toRotation: rotationValue, withDuration: duration)
     }
     
@@ -811,7 +809,7 @@ open class MFTMapView: UIView {
         self.addSubview(attributionBtn)
         
          //tabbaroffset
-        self.attributionBtn.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 12).isActive = true
+        self.attributionBtn.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 24).isActive = true
         self.attributionBtn.heightAnchor.constraint(equalToConstant: 41.3).isActive = true
         self.attributionBtn.widthAnchor.constraint(equalToConstant: 38.6).isActive = true
         self.attributionButtonBottomConstraint = attributionBtn.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: initialAttributionBottomConstraintConstant)
@@ -826,7 +824,7 @@ open class MFTMapView: UIView {
         
         let attributes: [NSAttributedStringKey: Any] = [NSAttributedStringKey.underlineStyle : NSUnderlineStyle.styleSingle.rawValue, NSAttributedStringKey.foregroundColor : UIColor.darkGray, NSAttributedStringKey.font : UIFont.systemFont(ofSize: 9)]
         
-        let attributedString = NSMutableAttributedString(string: "", attributes: attributes)
+        let attributedString = NSMutableAttributedString(string: "Mapfit Legal", attributes: attributes)
         legalButton.addTarget(self, action: #selector(legalButtonTapped), for: .touchUpInside)
         legalButton.setAttributedTitle(attributedString, for: .normal)
         
@@ -835,7 +833,8 @@ open class MFTMapView: UIView {
         
         self.legalButtonBottomConstraint = self.legalButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: initialLegalButtonBottomConstraintConstant)
         self.legalButtonBottomConstraint.isActive = true
-        self.legalButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
+        self.legalButton.isHidden = true
+        self.legalButton.leftAnchor.constraint(equalTo: self.attributionBtn.leftAnchor).isActive = true
 
     }
     
@@ -957,9 +956,11 @@ open class MFTMapView: UIView {
         if attributionButtonBottomConstraint.constant == initialAttributionBottomConstraintConstant  {
             attributionButtonBottomConstraint.constant = pressedAttributionBottomConstraintConstant
             legalButtonBottomConstraint.constant = pressedLegalButtonBottomConstraintConstant
+            self.legalButton.isHidden = false
         } else {
             attributionButtonBottomConstraint.constant = initialAttributionBottomConstraintConstant
             legalButtonBottomConstraint.constant = initialLegalButtonBottomConstraintConstant
+            self.legalButton.isHidden = true
         }
     }
 
