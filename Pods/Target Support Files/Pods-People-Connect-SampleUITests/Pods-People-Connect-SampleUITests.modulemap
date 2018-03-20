@@ -1,6 +1,0 @@
-framework module Pods_People_Connect_SampleUITests {
-  umbrella header "Pods-People-Connect-SampleUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

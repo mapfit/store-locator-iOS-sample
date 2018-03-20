@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8BCED613BF1218F75632BACE811A3008"
-               BuildableName = "Pods_People_Connect_Sample.framework"
-               BlueprintName = "Pods-People-Connect-Sample"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "BFB46EDF20580FAF007895E9"
+               BuildableName = "Store-Locator.app"
+               BlueprintName = "Store-Locator"
+               ReferencedContainer = "container:Store-Locator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BFB46EF320580FB0007895E9"
+               BuildableName = "Store-LocatorUITests.xctest"
+               BlueprintName = "Store-LocatorUITests"
+               ReferencedContainer = "container:Store-Locator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BFB46EDF20580FAF007895E9"
+            BuildableName = "Store-Locator.app"
+            BlueprintName = "Store-Locator"
+            ReferencedContainer = "container:Store-Locator.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8BCED613BF1218F75632BACE811A3008"
-            BuildableName = "Pods_People_Connect_Sample.framework"
-            BlueprintName = "Pods-People-Connect-Sample"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "BFB46EDF20580FAF007895E9"
+            BuildableName = "Store-Locator.app"
+            BlueprintName = "Store-Locator"
+            ReferencedContainer = "container:Store-Locator.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +80,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BFB46EDF20580FAF007895E9"
+            BuildableName = "Store-Locator.app"
+            BlueprintName = "Store-Locator"
+            ReferencedContainer = "container:Store-Locator.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -1,6 +1,6 @@
 //
 //  POICollectionViewCell.swift
-//  People-Connect-Sample
+//  Store-Locator
 //
 //  Created by Zain N. on 3/13/18.
 //  Copyright © 2018 Mapfit. All rights reserved.

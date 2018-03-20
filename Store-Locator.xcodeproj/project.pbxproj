@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BA6B9B84B5BD1AD3DB46221 /* Pods_People_Connect_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAA3787BD3107A39F5FE6DD /* Pods_People_Connect_Sample.framework */; };
-		A983A568D46EB802C3C6443B /* Pods_People_Connect_SampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A41DB1F962B33EBC1462044 /* Pods_People_Connect_SampleUITests.framework */; };
+		BF141534206191E10004C4BA /* Pods_Store_Locator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF141533206191E10004C4BA /* Pods_Store_Locator.framework */; };
 		BFB46EE420580FAF007895E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB46EE320580FAF007895E9 /* AppDelegate.swift */; };
 		BFB46EE620580FAF007895E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB46EE520580FAF007895E9 /* ViewController.swift */; };
 		BFB46EE920580FAF007895E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB46EE720580FAF007895E9 /* Main.storyboard */; };
 		BFB46EEB20580FB0007895E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB46EEA20580FB0007895E9 /* Assets.xcassets */; };
 		BFB46EEE20580FB0007895E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB46EEC20580FB0007895E9 /* LaunchScreen.storyboard */; };
-		BFB46EF920580FB0007895E9 /* People_Connect_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB46EF820580FB0007895E9 /* People_Connect_SampleUITests.swift */; };
 		BFB46F0420581670007895E9 /* POICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB46F0320581670007895E9 /* POICollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,23 +27,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BB95AEA75E4840748B7AFF6 /* Pods-People-Connect-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-People-Connect-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-People-Connect-Sample/Pods-People-Connect-Sample.release.xcconfig"; sourceTree = "<group>"; };
-		8A41DB1F962B33EBC1462044 /* Pods_People_Connect_SampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_People_Connect_SampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DAA3787BD3107A39F5FE6DD /* Pods_People_Connect_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_People_Connect_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2ED80C019274EECD1309EB1 /* Pods-People-Connect-SampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-People-Connect-SampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-People-Connect-SampleUITests/Pods-People-Connect-SampleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BFB46EE020580FAF007895E9 /* People-Connect-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "People-Connect-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		016EA8C78B6092441049EAD2 /* Pods_Store_Locator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Store_Locator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E44DDC13A0771052ABF710 /* Pods-Store-Locator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Store-Locator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Store-Locator/Pods-Store-Locator.debug.xcconfig"; sourceTree = "<group>"; };
+		688433307557905372FA87F4 /* Pods-Store-Locator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Store-Locator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Store-Locator/Pods-Store-Locator.release.xcconfig"; sourceTree = "<group>"; };
+		9946F646113CAD35BEDFC0A5 /* Pods-Store-LocatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Store-LocatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Store-LocatorUITests/Pods-Store-LocatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BF141533206191E10004C4BA /* Pods_Store_Locator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Store_Locator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB46EE020580FAF007895E9 /* Store-Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Store-Locator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB46EE320580FAF007895E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFB46EE520580FAF007895E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFB46EE820580FAF007895E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFB46EEA20580FB0007895E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB46EED20580FB0007895E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFB46EEF20580FB0007895E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFB46EF420580FB0007895E9 /* People-Connect-SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "People-Connect-SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFB46EF820580FB0007895E9 /* People_Connect_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People_Connect_SampleUITests.swift; sourceTree = "<group>"; };
-		BFB46EFA20580FB0007895E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB46EF420580FB0007895E9 /* Store-LocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Store-LocatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB46F0320581670007895E9 /* POICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POICollectionViewCell.swift; sourceTree = "<group>"; };
-		CE029AC853AF5D404220B2A5 /* Pods-People-Connect-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-People-Connect-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-People-Connect-Sample/Pods-People-Connect-Sample.debug.xcconfig"; sourceTree = "<group>"; };
-		E34773DB6BE7C35ED12F3792 /* Pods-People-Connect-SampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-People-Connect-SampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-People-Connect-SampleUITests/Pods-People-Connect-SampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5C92069BAC9B937F9FF1393 /* Pods-Store-LocatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Store-LocatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Store-LocatorUITests/Pods-Store-LocatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA6B9B84B5BD1AD3DB46221 /* Pods_People_Connect_Sample.framework in Frameworks */,
+				BF141534206191E10004C4BA /* Pods_Store_Locator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A983A568D46EB802C3C6443B /* Pods_People_Connect_SampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +66,8 @@
 		B836E72CF2BC73BA597C8FC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9DAA3787BD3107A39F5FE6DD /* Pods_People_Connect_Sample.framework */,
-				8A41DB1F962B33EBC1462044 /* Pods_People_Connect_SampleUITests.framework */,
+				BF141533206191E10004C4BA /* Pods_Store_Locator.framework */,
+				016EA8C78B6092441049EAD2 /* Pods_Store_Locator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,8 +75,7 @@
 		BFB46ED720580FAF007895E9 = {
 			isa = PBXGroup;
 			children = (
-				BFB46EE220580FAF007895E9 /* People-Connect-Sample */,
-				BFB46EF720580FB0007895E9 /* People-Connect-SampleUITests */,
+				BFB46EE220580FAF007895E9 /* Store-Locator */,
 				BFB46EE120580FAF007895E9 /* Products */,
 				E38F7DE0978EF98B9A318471 /* Pods */,
 				B836E72CF2BC73BA597C8FC7 /* Frameworks */,
@@ -91,13 +85,13 @@
 		BFB46EE120580FAF007895E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFB46EE020580FAF007895E9 /* People-Connect-Sample.app */,
-				BFB46EF420580FB0007895E9 /* People-Connect-SampleUITests.xctest */,
+				BFB46EE020580FAF007895E9 /* Store-Locator.app */,
+				BFB46EF420580FB0007895E9 /* Store-LocatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFB46EE220580FAF007895E9 /* People-Connect-Sample */ = {
+		BFB46EE220580FAF007895E9 /* Store-Locator */ = {
 			isa = PBXGroup;
 			children = (
 				BFB46EE320580FAF007895E9 /* AppDelegate.swift */,
@@ -108,25 +102,16 @@
 				BFB46EEC20580FB0007895E9 /* LaunchScreen.storyboard */,
 				BFB46EEF20580FB0007895E9 /* Info.plist */,
 			);
-			path = "People-Connect-Sample";
-			sourceTree = "<group>";
-		};
-		BFB46EF720580FB0007895E9 /* People-Connect-SampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BFB46EF820580FB0007895E9 /* People_Connect_SampleUITests.swift */,
-				BFB46EFA20580FB0007895E9 /* Info.plist */,
-			);
-			path = "People-Connect-SampleUITests";
+			path = "Store-Locator";
 			sourceTree = "<group>";
 		};
 		E38F7DE0978EF98B9A318471 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CE029AC853AF5D404220B2A5 /* Pods-People-Connect-Sample.debug.xcconfig */,
-				0BB95AEA75E4840748B7AFF6 /* Pods-People-Connect-Sample.release.xcconfig */,
-				E34773DB6BE7C35ED12F3792 /* Pods-People-Connect-SampleUITests.debug.xcconfig */,
-				B2ED80C019274EECD1309EB1 /* Pods-People-Connect-SampleUITests.release.xcconfig */,
+				37E44DDC13A0771052ABF710 /* Pods-Store-Locator.debug.xcconfig */,
+				688433307557905372FA87F4 /* Pods-Store-Locator.release.xcconfig */,
+				F5C92069BAC9B937F9FF1393 /* Pods-Store-LocatorUITests.debug.xcconfig */,
+				9946F646113CAD35BEDFC0A5 /* Pods-Store-LocatorUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -134,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BFB46EDF20580FAF007895E9 /* People-Connect-Sample */ = {
+		BFB46EDF20580FAF007895E9 /* Store-Locator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFB46EFD20580FB0007895E9 /* Build configuration list for PBXNativeTarget "People-Connect-Sample" */;
+			buildConfigurationList = BFB46EFD20580FB0007895E9 /* Build configuration list for PBXNativeTarget "Store-Locator" */;
 			buildPhases = (
 				5BE4360268EAEE50B5642BCD /* [CP] Check Pods Manifest.lock */,
 				BFB46EDC20580FAF007895E9 /* Sources */,
@@ -149,14 +134,14 @@
 			);
 			dependencies = (
 			);
-			name = "People-Connect-Sample";
+			name = "Store-Locator";
 			productName = "People-Connect-Sample";
-			productReference = BFB46EE020580FAF007895E9 /* People-Connect-Sample.app */;
+			productReference = BFB46EE020580FAF007895E9 /* Store-Locator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BFB46EF320580FB0007895E9 /* People-Connect-SampleUITests */ = {
+		BFB46EF320580FB0007895E9 /* Store-LocatorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFB46F0020580FB0007895E9 /* Build configuration list for PBXNativeTarget "People-Connect-SampleUITests" */;
+			buildConfigurationList = BFB46F0020580FB0007895E9 /* Build configuration list for PBXNativeTarget "Store-LocatorUITests" */;
 			buildPhases = (
 				5C32EC8B8DECD2E10188A9E5 /* [CP] Check Pods Manifest.lock */,
 				BFB46EF020580FB0007895E9 /* Sources */,
@@ -170,9 +155,9 @@
 			dependencies = (
 				BFB46EF620580FB0007895E9 /* PBXTargetDependency */,
 			);
-			name = "People-Connect-SampleUITests";
+			name = "Store-LocatorUITests";
 			productName = "People-Connect-SampleUITests";
-			productReference = BFB46EF420580FB0007895E9 /* People-Connect-SampleUITests.xctest */;
+			productReference = BFB46EF420580FB0007895E9 /* Store-LocatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +181,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BFB46EDB20580FAF007895E9 /* Build configuration list for PBXProject "People-Connect-Sample" */;
+			buildConfigurationList = BFB46EDB20580FAF007895E9 /* Build configuration list for PBXProject "Store-Locator" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -209,8 +194,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BFB46EDF20580FAF007895E9 /* People-Connect-Sample */,
-				BFB46EF320580FB0007895E9 /* People-Connect-SampleUITests */,
+				BFB46EDF20580FAF007895E9 /* Store-Locator */,
+				BFB46EF320580FB0007895E9 /* Store-LocatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,7 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-People-Connect-Sample/Pods-People-Connect-Sample-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Store-Locator/Pods-Store-Locator-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4EA9588458CA4ACE1D9B41EB /* [CP] Embed Pods Frameworks */ = {
@@ -257,7 +242,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-People-Connect-Sample/Pods-People-Connect-Sample-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Store-Locator/Pods-Store-Locator-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Mapfit/Mapfit.framework",
 				"${PODS_ROOT}/Tetragon-mobile/Release/TangramMap.framework",
 			);
@@ -268,7 +253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-People-Connect-Sample/Pods-People-Connect-Sample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Store-Locator/Pods-Store-Locator-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5BE4360268EAEE50B5642BCD /* [CP] Check Pods Manifest.lock */ = {
@@ -282,7 +267,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-People-Connect-Sample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Store-Locator-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -300,7 +285,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-People-Connect-SampleUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Store-LocatorUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -319,7 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-People-Connect-SampleUITests/Pods-People-Connect-SampleUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Store-LocatorUITests/Pods-Store-LocatorUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6222309240A32038D4E062F9 /* [CP] Embed Pods Frameworks */ = {
@@ -334,7 +319,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-People-Connect-SampleUITests/Pods-People-Connect-SampleUITests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Store-LocatorUITests/Pods-Store-LocatorUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -354,7 +339,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB46EF920580FB0007895E9 /* People_Connect_SampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +347,7 @@
 /* Begin PBXTargetDependency section */
 		BFB46EF620580FB0007895E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BFB46EDF20580FAF007895E9 /* People-Connect-Sample */;
+			target = BFB46EDF20580FAF007895E9 /* Store-Locator */;
 			targetProxy = BFB46EF520580FB0007895E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -503,14 +487,14 @@
 		};
 		BFB46EFE20580FB0007895E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE029AC853AF5D404220B2A5 /* Pods-People-Connect-Sample.debug.xcconfig */;
+			baseConfigurationReference = 37E44DDC13A0771052ABF710 /* Pods-Store-Locator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G73R47QN9;
-				INFOPLIST_FILE = "People-Connect-Sample/Info.plist";
+				INFOPLIST_FILE = "Store-Locator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Mapfit.People-Connect-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mapfit.Store-Locator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos11.2;
 				SWIFT_VERSION = 4.0;
@@ -520,14 +504,14 @@
 		};
 		BFB46EFF20580FB0007895E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BB95AEA75E4840748B7AFF6 /* Pods-People-Connect-Sample.release.xcconfig */;
+			baseConfigurationReference = 688433307557905372FA87F4 /* Pods-Store-Locator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G73R47QN9;
-				INFOPLIST_FILE = "People-Connect-Sample/Info.plist";
+				INFOPLIST_FILE = "Store-Locator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Mapfit.People-Connect-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mapfit.Store-Locator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos11.2;
 				SWIFT_VERSION = 4.0;
@@ -537,42 +521,42 @@
 		};
 		BFB46F0120580FB0007895E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E34773DB6BE7C35ED12F3792 /* Pods-People-Connect-SampleUITests.debug.xcconfig */;
+			baseConfigurationReference = F5C92069BAC9B937F9FF1393 /* Pods-Store-LocatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G73R47QN9;
-				INFOPLIST_FILE = "People-Connect-SampleUITests/Info.plist";
+				INFOPLIST_FILE = "Store-Locator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Mapfit.People-Connect-SampleUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Store-LocatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "People-Connect-Sample";
+				TEST_TARGET_NAME = "Store-Locator";
 			};
 			name = Debug;
 		};
 		BFB46F0220580FB0007895E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2ED80C019274EECD1309EB1 /* Pods-People-Connect-SampleUITests.release.xcconfig */;
+			baseConfigurationReference = 9946F646113CAD35BEDFC0A5 /* Pods-Store-LocatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G73R47QN9;
-				INFOPLIST_FILE = "People-Connect-SampleUITests/Info.plist";
+				INFOPLIST_FILE = "Store-Locator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Mapfit.People-Connect-SampleUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Store-LocatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "People-Connect-Sample";
+				TEST_TARGET_NAME = "Store-Locator";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFB46EDB20580FAF007895E9 /* Build configuration list for PBXProject "People-Connect-Sample" */ = {
+		BFB46EDB20580FAF007895E9 /* Build configuration list for PBXProject "Store-Locator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFB46EFB20580FB0007895E9 /* Debug */,
@@ -581,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFB46EFD20580FB0007895E9 /* Build configuration list for PBXNativeTarget "People-Connect-Sample" */ = {
+		BFB46EFD20580FB0007895E9 /* Build configuration list for PBXNativeTarget "Store-Locator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFB46EFE20580FB0007895E9 /* Debug */,
@@ -590,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFB46F0020580FB0007895E9 /* Build configuration list for PBXNativeTarget "People-Connect-SampleUITests" */ = {
+		BFB46F0020580FB0007895E9 /* Build configuration list for PBXNativeTarget "Store-LocatorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFB46F0120580FB0007895E9 /* Debug */,

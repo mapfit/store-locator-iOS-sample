@@ -1,0 +1,6 @@
+framework module Pods_Store_LocatorUITests {
+  umbrella header "Pods-Store-LocatorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

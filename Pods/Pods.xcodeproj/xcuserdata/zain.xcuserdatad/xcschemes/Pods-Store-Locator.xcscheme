@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "859799C22DAFF1CD3FAA461CEC8B0080"
-               BuildableName = "Pods_People_Connect_SampleUITests.framework"
-               BlueprintName = "Pods-People-Connect-SampleUITests"
+               BlueprintIdentifier = "5146A71C214F38E0C024DEBE99ADFD7C"
+               BuildableName = "Pods_Store_Locator.framework"
+               BlueprintName = "Pods-Store-Locator"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "859799C22DAFF1CD3FAA461CEC8B0080"
-            BuildableName = "Pods_People_Connect_SampleUITests.framework"
-            BlueprintName = "Pods-People-Connect-SampleUITests"
+            BlueprintIdentifier = "5146A71C214F38E0C024DEBE99ADFD7C"
+            BuildableName = "Pods_Store_Locator.framework"
+            BlueprintName = "Pods-Store-Locator"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_People_Connect_SampleUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_People_Connect_SampleUITestsVersionString[];
+FOUNDATION_EXPORT double Pods_Store_LocatorVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Store_LocatorVersionString[];
 

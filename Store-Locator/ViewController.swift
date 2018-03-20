@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  People-Connect-Sample
+//  Store-Locator
 //
 //  Created by Zain N. on 3/13/18.
 //  Copyright © 2018 Mapfit. All rights reserved.
@@ -68,6 +68,7 @@ class ViewController: UIViewController {
     
     func setUpMap(){
         mapView.frame = view.bounds
+        mapView.mapOptions.setTheme(theme: .day)
         view.addSubview(mapView)
         view.sendSubview(toBack: mapView)
         mapView.setZoom(zoomLevel: 15)
@@ -113,6 +114,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         collectionView.decelerationRate = UIScrollViewDecelerationRateNormal
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
+        collectionView.showsHorizontalScrollIndicator = false
         
     }
     
@@ -149,7 +151,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         snapToCell()
     }
-    
     
 
     @objc func snapToCell(){
