@@ -148,7 +148,7 @@ public class MFTMapOptions  {
         self.isRotateEnabled = true
         self.isTiltEnabled = true
         self.is3DbuildingsEnabled = true
-        self.minZoomLevel = 0
+        self.minZoomLevel = 1
         self.maxZoomLevel = 20
     }
 }

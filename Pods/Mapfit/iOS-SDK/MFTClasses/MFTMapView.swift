@@ -50,14 +50,7 @@ open class MFTMapView: UIView {
     }
 
     /// The current zoom level.
-    internal var zoom: Float {
-        set {
-            mapView.zoom = newValue
-        }
-        get {
-            return mapView.zoom
-        }
-    }
+    internal var zoom: Float
     
     /// The current roation, in radians from north.
     internal var rotation: Float {
@@ -163,10 +156,10 @@ open class MFTMapView: UIView {
    
     
     //attribution button bottom constraint
-    var initialAttributionBottomConstraintConstant: CGFloat = -146.5
-    var pressedAttributionBottomConstraintConstant: CGFloat = -165
+    var initialAttributionBottomConstraintConstant: CGFloat = -206.5
+    var pressedAttributionBottomConstraintConstant: CGFloat = -215
     var initialLegalButtonBottomConstraintConstant: CGFloat = -110
-    var pressedLegalButtonBottomConstraintConstant: CGFloat = -140
+    var pressedLegalButtonBottomConstraintConstant: CGFloat = -195
     
     var attributionButtonBottomConstraint = NSLayoutConstraint()
     var legalButtonBottomConstraint = NSLayoutConstraint()
@@ -197,7 +190,7 @@ open class MFTMapView: UIView {
         self.application = UIApplication.shared
         self.mapfitManger = MFTManager.sharedManager
         self.position = CLLocationCoordinate2D(latitude: 40.6892, longitude: -74.0445)
-        
+        self.zoom = 1
         let httpHandler = TGHttpHandler()
         httpHandler.httpAdditionalHeaders = NSMutableDictionary(dictionary: MFTManager.sharedManager.httpHeaders())
         mapView.httpHandler = httpHandler
@@ -226,7 +219,7 @@ open class MFTMapView: UIView {
         self.application = UIApplication.shared
         self.mapfitManger = MFTManager.sharedManager
         self.position = position
-        
+        self.zoom = 1
         let httpHandler = TGHttpHandler()
         httpHandler.httpAdditionalHeaders = NSMutableDictionary(dictionary: MFTManager.sharedManager.httpHeaders())
         mapView.httpHandler = httpHandler
@@ -313,6 +306,8 @@ open class MFTMapView: UIView {
         if zoomLevel < mapOptions.getMinZoomLevel() {
             zoomL = mapOptions.getMinZoomLevel()
         }
+        
+        self.mapView.zoom = zoomL
         self.zoom = zoomL
     }
     
@@ -324,6 +319,7 @@ open class MFTMapView: UIView {
     
     public func setZoom(zoomLevel: Float, duration: Float){
         var zoomL = zoomLevel
+        
         if zoomLevel > mapOptions.getMaxZoomLevel() {
             zoomL = mapOptions.getMaxZoomLevel()
         }
@@ -332,9 +328,10 @@ open class MFTMapView: UIView {
             zoomL = mapOptions.getMinZoomLevel()
         }
         
-        //self.zoom = zoomL
-        mapView.animate(toZoomLevel: zoomL, withDuration: duration)
-        //self.zoom = zoomL
+        self.zoom = zoomL
+        
+        mapView.animate(toZoomLevel: zoomL, withDuration: duration, with: .cubic)
+   
     }
 
     /**
@@ -343,7 +340,7 @@ open class MFTMapView: UIView {
      */
     
     public func getZoom() -> Float {
-        return self.zoom
+        return self.mapView.zoom
     }
     
     /**
@@ -1198,14 +1195,29 @@ extension MFTMapView : TGMapViewDelegate, MapPlaceInfoSelectDelegate {
     
     open func mapView(_ view: TGMapViewController, recognizer: UIGestureRecognizer, shouldRecognizePinchGesture location: CGPoint) -> Bool {
          let pinch = recognizer as! UIPinchGestureRecognizer
-         minMaxZoomTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(checkZoomLevels), userInfo: nil, repeats: true)
+       
+        if pinch.state == .began{
+             minMaxZoomTimer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(checkZoomLevels), userInfo: nil, repeats: true)
+        }
+       
         
-        if self.zoom > mapOptions.getMaxZoomLevel() && self.zoom * Float(pinch.scale) > mapOptions.getMaxZoomLevel() {
-            return false
+        if self.mapView.zoom > mapOptions.getMaxZoomLevel() && self.mapView.zoom * Float(pinch.scale) > mapOptions.getMaxZoomLevel() {
+            if pinch.scale > 1 {
+                return false
+            }else{
+                return true
+            }
+            
+            
         }
         
         if self.zoom < mapOptions.getMinZoomLevel() && self.zoom * Float(pinch.scale) < mapOptions.getMinZoomLevel() {
-            return false
+            if pinch.scale < 1 {
+                return false
+            }else{
+                return true
+            }
+            
         }
         
         if pinch.state == .ended {
@@ -1219,11 +1231,11 @@ extension MFTMapView : TGMapViewDelegate, MapPlaceInfoSelectDelegate {
         
         let pinch = recognizer as! UIPinchGestureRecognizer
         
-        if self.zoom > mapOptions.getMaxZoomLevel() && self.zoom * Float(pinch.scale) > mapOptions.getMaxZoomLevel() {
+        if self.mapView.zoom > mapOptions.getMaxZoomLevel() && self.mapView.zoom * Float(pinch.scale) > mapOptions.getMaxZoomLevel() {
             setZoom(zoomLevel: mapOptions.getMaxZoomLevel(), duration: 0.123)
         }
         
-        if self.zoom < mapOptions.getMinZoomLevel() && self.zoom * Float(pinch.scale) < mapOptions.getMinZoomLevel() {
+        if self.mapView.zoom < mapOptions.getMinZoomLevel() && self.mapView.zoom * Float(pinch.scale) < mapOptions.getMinZoomLevel() {
             setZoom(zoomLevel: mapOptions.getMinZoomLevel(), duration: 0.123)
         }
         
@@ -1233,12 +1245,12 @@ extension MFTMapView : TGMapViewDelegate, MapPlaceInfoSelectDelegate {
     }
     
     @objc private func checkZoomLevels(){
-        if self.zoom > mapOptions.getMaxZoomLevel() {
-            setZoom(zoomLevel: mapOptions.getMaxZoomLevel(), duration: 0.123)
+        if self.mapView.zoom > mapOptions.getMaxZoomLevel() {
+            self.mapView.zoom = mapOptions.getMaxZoomLevel()
         }
         
-        if self.zoom < mapOptions.getMinZoomLevel() {
-            setZoom(zoomLevel: mapOptions.getMinZoomLevel(), duration: 0.123)
+        if self.mapView.zoom < mapOptions.getMinZoomLevel() {
+            self.mapView.zoom = mapOptions.getMinZoomLevel()
         }
     }
 

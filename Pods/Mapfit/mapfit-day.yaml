@@ -6,7 +6,7 @@ sources:
  mapfit:
   type: MVT
   #url:  https://tiles.mapfit.com/vector/v1/all/{z}/{x}/{y}.mvt
-  url:  https://tiles.mapfit.com/vector/v1/roads,water,places,buildings,landuse,boundaries,transit/{z}/{x}/{y}.mvt
+  url:  https://tiles2.mapfit.com/vector/v2/all/{z}/{x}/{y}.mvt
   #roads,water,places,buildings,landuse
   tile_size: 512
   max_zoom: 16
