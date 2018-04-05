@@ -156,9 +156,9 @@ open class MFTMapView: UIView {
    
     
     //attribution button bottom constraint
-    var initialAttributionBottomConstraintConstant: CGFloat = -206.5
-    var pressedAttributionBottomConstraintConstant: CGFloat = -215
-    var initialLegalButtonBottomConstraintConstant: CGFloat = -110
+    var initialAttributionBottomConstraintConstant: CGFloat = -200.5
+    var pressedAttributionBottomConstraintConstant: CGFloat = -209
+    var initialLegalButtonBottomConstraintConstant: CGFloat = -175
     var pressedLegalButtonBottomConstraintConstant: CGFloat = -195
     
     var attributionButtonBottomConstraint = NSLayoutConstraint()

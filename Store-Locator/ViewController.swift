@@ -53,8 +53,6 @@ class ViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = homeButton
         self.navigationItem.rightBarButtonItem = githubButton
         self.navigationItem.title = "Coffee Shop Locations"
-        self.mapView.mapOptions.setMaxZoomLevel(zoomLevel: 15)
-        self.mapView.mapOptions.setMinZoomLevel(zoomLevel: 5)
         mapView.markerSelectDelegate = self
         loadData()
         setUpMap()
@@ -141,13 +139,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "poiCell",
                                                       for: indexPath) as! POICollectionViewCell
         cell.setUpCell(poi: locations[indexPath.row])
-        cell.getDirectionsButton.tag = indexPath.row + 1
-        cell.getDirectionsButton.addTarget(self, action: #selector(showDirections(_:)), for: .touchUpInside)
         return cell
-    }
-    
-    @objc func showDirections(_ sender: UIButton){
-   
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

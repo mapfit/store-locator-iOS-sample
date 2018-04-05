@@ -15,13 +15,9 @@ class POICollectionViewCell: UICollectionViewCell {
     lazy var card: UIView = UIView()
     lazy var neighborhood: UILabel = UILabel()
     lazy var leftLabelStackView: UIStackView = UIStackView()
-    lazy var rightLabelStackView: UIStackView = UIStackView()
-    lazy var getDirectionsButton: UIButton = UIButton()
     lazy var numberLabel: UILabel = UILabel()
     lazy var leftSubtitle1: UILabel = UILabel()
     lazy var leftSubtitle2: UILabel = UILabel()
-    
-
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -49,13 +45,11 @@ class POICollectionViewCell: UICollectionViewCell {
        self.card.addSubview(numberLabel)
        self.card.addSubview(neighborhood)
        self.card.addSubview(leftLabelStackView)
-       self.card.addSubview(getDirectionsButton)
         
         
         self.card.translatesAutoresizingMaskIntoConstraints = false
         self.neighborhood.translatesAutoresizingMaskIntoConstraints = false
         self.leftLabelStackView.translatesAutoresizingMaskIntoConstraints = false
-        self.getDirectionsButton.translatesAutoresizingMaskIntoConstraints = false
         self.numberLabel.translatesAutoresizingMaskIntoConstraints = false
         
         self.card.widthAnchor.constraint(equalTo: self.contentView.widthAnchor, multiplier: 0.97).isActive = true
@@ -77,36 +71,27 @@ class POICollectionViewCell: UICollectionViewCell {
         self.leftLabelStackView.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.leftLabelStackView.topAnchor.constraint(equalTo: self.neighborhood.bottomAnchor, constant: 15).isActive = true
         self.leftLabelStackView.leadingAnchor.constraint(equalTo: self.neighborhood.leadingAnchor).isActive = true
-
-        self.getDirectionsButton.widthAnchor.constraint(equalToConstant: 130).isActive = true
-        self.getDirectionsButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        self.getDirectionsButton.topAnchor.constraint(equalTo: self.leftLabelStackView.bottomAnchor, constant: 15).isActive = true
-        self.getDirectionsButton.leadingAnchor.constraint(equalTo: self.neighborhood.leadingAnchor).isActive = true
         
         self.leftLabelStackView.axis = .vertical
         self.leftLabelStackView.addArrangedSubview(leftSubtitle1)
         self.leftLabelStackView.addArrangedSubview(leftSubtitle2)
 
-        
-        
+
         self.neighborhood.textColor = UIColor(red: 68/255, green: 77/255, blue: 91/255, alpha: 1)
         self.leftSubtitle1.textColor = UIColor(red: 128/255, green: 138/255, blue: 152/255, alpha: 1)
         self.leftSubtitle2.textColor = UIColor(red: 128/255, green: 138/255, blue: 152/255, alpha: 1)
         self.numberLabel.textColor = UIColor(red: 128/255, green: 138/255, blue: 152/255, alpha: 1)
-        self.getDirectionsButton.setTitleColor(UIColor(red: 0/255, green: 158/255, blue: 255/255, alpha: 1), for: .normal)
         
         self.neighborhood.font = UIFont.systemFont(ofSize: 18)
         self.numberLabel.font = UIFont.systemFont(ofSize: 18)
         self.leftSubtitle1.font = UIFont.systemFont(ofSize: 14)
         self.leftSubtitle2.font = UIFont.systemFont(ofSize: 14)
-        self.getDirectionsButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+
         
         self.neighborhood.text = poi.neighborhood
         self.numberLabel.text = poi.number
         self.leftSubtitle1.text = poi.address
         self.leftSubtitle2.text = "\(poi.city), \(poi.state), \(poi.zipCode)"
-        self.getDirectionsButton.setTitle("Get Directions", for: .normal)
-        self.getDirectionsButton.contentHorizontalAlignment = .leading
     }
     
 }
