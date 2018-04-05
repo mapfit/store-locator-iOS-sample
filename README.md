@@ -1,5 +1,5 @@
 # store-locator-iOS-sample
-![alt text](https://github.com/mapfit/store-locator-iOS-sample/master/StoreLocator-iOS.png)
+![alt text](https://github.com/mapfit/store-locator-iOS-sample/blob/master/StoreLocator-iOS.png)
 
 ## Features
 
