@@ -1,7 +1,6 @@
 
 # Mapfit iOS SDK
-> The Mapfit iOS SDK packages up everything you need to use Mapfit's services in your iOS applications.
-
+![alt text](https://github.com/mapfit/iOS-sdk/blob/master/READMEImage.png)
 
 ## Features
 
@@ -32,6 +31,7 @@ import Mapfit
 
 ## Set your API Key
 
+[Get an API Key](https://mapfit.com/getstarted)
 ```swift
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -40,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
+
 
 
 ## Create your map
@@ -55,3 +56,6 @@ view.addSubview(mapView)
 ```swift
 let marker = mapView.addMarker(position:  CLLocationCoordinate2D(latitude: 40.74699, longitude: -73.98742))
 ```
+## [Full Documentation](https://ios.mapfit.com/docs)
+
+

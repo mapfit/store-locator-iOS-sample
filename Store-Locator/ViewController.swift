@@ -45,6 +45,11 @@ class ViewController: UIViewController {
     var collectionView: UICollectionView?
     var locations = [POI]()
     var currentPolyline: MFTPolyline?
+    var initialZoom: Float = 12.5
+    var initialRotation: Float = 2.05
+    var initialTilt: Float = 0.85
+    var homeAnimationDuration: Float = 0.5
+    var initialCenter: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 40.73748242049333, longitude: -73.95733284034074)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,10 +68,10 @@ class ViewController: UIViewController {
     @objc func homeButtonTapped(){
         let queue: OperationQueue = OperationQueue()
         queue.maxConcurrentOperationCount = (4)
-        queue.addOperation({self.mapView.setCenter(position: CLLocationCoordinate2D(latitude: 40.743075076735416, longitude: -73.99652806346154), duration: 0.5)})
-        queue.addOperation({self.mapView.setZoom(zoomLevel: 12.95, duration: 0.5)})
-        queue.addOperation({self.mapView.setRotation(rotationValue: 3.66, duration: 0.5)})
-        queue.addOperation({self.mapView.setTilt(tiltValue: 1.03, duration: 0.5)})
+        queue.addOperation({self.mapView.setCenter(position: self.initialCenter, duration: self.homeAnimationDuration)})
+        queue.addOperation({self.mapView.setZoom(zoomLevel: self.initialZoom, duration: self.homeAnimationDuration)})
+        queue.addOperation({self.mapView.setRotation(rotationValue: self.initialRotation, duration: self.homeAnimationDuration)})
+        queue.addOperation({self.mapView.setTilt(tiltValue: self.initialTilt, duration: self.homeAnimationDuration)})
     }
     
     @objc func githubButtonTapped(){
@@ -81,10 +86,10 @@ class ViewController: UIViewController {
         mapView.mapOptions.setTheme(theme: .day)
         view.addSubview(mapView)
         view.sendSubview(toBack: mapView)
-        mapView.setZoom(zoomLevel: 12.95)
-        mapView.setTilt(tiltValue: 1.03)
-        mapView.setRotation(rotationValue: 3.66)
-        mapView.setCenter(position: CLLocationCoordinate2D(latitude: 40.743075076735416, longitude: -73.99652806346154))
+        mapView.setZoom(zoomLevel: self.initialZoom)
+        mapView.setTilt(tiltValue: self.initialTilt)
+        mapView.setRotation(rotationValue: self.initialRotation)
+        mapView.setCenter(position: self.initialCenter)
     }
     
     func zoomAndCenter(zoom: Float, coordinate: CLLocationCoordinate2D, duration: Float){
@@ -147,7 +152,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.width * 0.9, height: 170)
+        return CGSize(width: self.view.frame.width * 0.9, height: 121)
     }
 
     

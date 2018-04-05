@@ -10,7 +10,11 @@ import Foundation
 import TangramMap
 import CoreLocation
 
-
+public enum MFTAnchorPosition : String {
+    case top = "top"
+    case bottom = "bottom"
+    case center = "center"
+}
 
 @objc(MFTMarkerOptions)
 public class MFTMarkerOptions : NSObject{
@@ -22,14 +26,32 @@ public class MFTMarkerOptions : NSObject{
     internal var marker: MFTMarker
    // Sets the draw order for the marker. The draw order is relative to other annotations. Note that higher values are drawn above lower ones.
     public var drawOrder: Int
+    internal var color: String
+    public var flat: Bool
+    internal var interactive: Bool
+    
+    
+    // Set Anchor
+    public var anchorPosition: MFTAnchorPosition
     
     /**
      Sets the height for the marker icon.
      
      - parameter height: height of marker icon.
      */
-    public func setHeight(height: Int){
+    public func setHeight(
+        height: Int){
         self.height = height
+        marker.setStyle()
+    }
+    
+    /**
+     Sets anchor position of marker.
+     
+     - parameter position: position of marker icon.
+     */
+    internal func setAnchorPosition(_ position: MFTAnchorPosition){
+        self.anchorPosition = position
         marker.setStyle()
     }
     
@@ -50,23 +72,50 @@ public class MFTMarkerOptions : NSObject{
      */
     
     public func setDrawOrder(drawOrder: Int){
+        self.drawOrder = drawOrder
         marker.tgMarker?.drawOrder = drawOrder
-        marker.setStyle()
     }
     /**
      Sets the color for the marker icon.
      
      - parameter color: color of marker icon.
      */
-
+    internal func setColor(color: String) {
+        self.color = color
+        marker.setStyle()
+    }
+    
+    internal func setFlat(_ flat: Bool) {
+        self.flat = flat
+        marker.setStyle()
+    }
+    
+    
+    
+    internal func updateSize(height: Int, width: Int){
+        self.height = height
+        self.width = width
+        marker.setStyle()
+    }
+    
+    internal func setInteractivity(_ interactive: Bool){
+        self.interactive = interactive
+        marker.setStyle()
+    }
    
     //Default Init
     internal init(_ marker: MFTMarker) {
         height = 59
         width = 55
         drawOrder = 2000
+        anchorPosition = .top
+        color = "white"
+        flat = false
+        interactive = true
         self.marker = marker
+        
         super.init()
+        
     }
 }
 
@@ -79,7 +128,7 @@ public class MFTMarkerOptions : NSObject{
 public class MFTMarker : NSObject, MFTAnnotation {
 
     public var uuid: UUID
-    public var mapView = MFTMapView()
+    public var mapView: MFTMapView?
     
     /**
      Title of Marker.
@@ -105,7 +154,7 @@ public class MFTMarker : NSObject, MFTAnnotation {
         didSet {
             tgMarker?.visible = isVisible
             tgMarker?.point = TGGeoPoint(coordinate: position)
-            
+            tgMarker?.drawOrder = 2000
             setStyle()
         }
         
@@ -173,7 +222,11 @@ public class MFTMarker : NSObject, MFTAnnotation {
     }
     
     internal func getScreenPosition()->CGPoint {
-        return self.mapView.mapView.lngLat(toScreenPosition: TGGeoPointMake(self.getPosition().longitude, self.getPosition().latitude))
+        if let mapView = self.mapView {
+        return mapView.mapView.lngLat(toScreenPosition: TGGeoPointMake(self.getPosition().longitude, self.getPosition().latitude))
+        } else {
+            return CGPoint(x: 0, y: 0)
+        }
     }
     
     /**
@@ -255,7 +308,7 @@ public class MFTMarker : NSObject, MFTAnnotation {
     }
     
     private func generateStyle(_ markerOptions: MFTMarkerOptions) -> String{
-        return "{ style: 'sdk-point-overlay', anchor: top, color: 'white', size: [\(markerOptions.width)px, \(markerOptions.height)px], order: \(markerOptions.drawOrder), interactive: true, collide: false }"
+        return "{ style: 'sdk-point-overlay', color: \(markerOptions.color), anchor: \(markerOptions.anchorPosition.rawValue), size: [\(markerOptions.width)px, \(markerOptions.height)px], interactive: \(markerOptions.interactive), collide: false, flat: \(markerOptions.flat)}"
     }
     
     /**
@@ -332,6 +385,13 @@ public class MFTMarker : NSObject, MFTAnnotation {
         }
 
     }
+
+
+    internal func setPositionWithEase(_ position: CLLocationCoordinate2D) {
+        tgMarker?.pointEased(TGGeoPointMake(position.longitude, position.latitude), seconds: 0.01, easeType: .cubic)
+        
+    }
+
 }
     
     
@@ -346,9 +406,8 @@ public class MFTMarker : NSObject, MFTAnnotation {
 //        tgMarker?.pointEased(coordinates, seconds: seconds, easeType: ease)
 //        //TODO: Add error management back in here once we're doing it everywhere correctly.
 //        return true
-//
-//    }
-    
+
+
 
 /**
  Default icons provided by Mapfit.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		775C49007072801AF8FD4660 /* Pods_Store_LocatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3A434BF4471F09785183F7 /* Pods_Store_LocatorUITests.framework */; };
 		BF141534206191E10004C4BA /* Pods_Store_Locator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF141533206191E10004C4BA /* Pods_Store_Locator.framework */; };
 		BFB46EE420580FAF007895E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB46EE320580FAF007895E9 /* AppDelegate.swift */; };
 		BFB46EE620580FAF007895E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB46EE520580FAF007895E9 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		BFB46EEF20580FB0007895E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFB46EF420580FB0007895E9 /* Store-LocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Store-LocatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB46F0320581670007895E9 /* POICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POICollectionViewCell.swift; sourceTree = "<group>"; };
+		DE3A434BF4471F09785183F7 /* Pods_Store_LocatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Store_LocatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C92069BAC9B937F9FF1393 /* Pods-Store-LocatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Store-LocatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Store-LocatorUITests/Pods-Store-LocatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775C49007072801AF8FD4660 /* Pods_Store_LocatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +71,7 @@
 			children = (
 				BF141533206191E10004C4BA /* Pods_Store_Locator.framework */,
 				016EA8C78B6092441049EAD2 /* Pods_Store_Locator.framework */,
+				DE3A434BF4471F09785183F7 /* Pods_Store_LocatorUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,7 +248,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Store-Locator/Pods-Store-Locator-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Mapfit/Mapfit.framework",
-				"${PODS_ROOT}/Tetragon-mobile/Release/TangramMap.framework",
+				"${PODS_ROOT}/Tetragon-mobile/tetragon-release-1.0.1/TangramMap.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
