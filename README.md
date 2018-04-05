@@ -1,46 +1,20 @@
-# store-locator-iOS-sample
 ![alt text](https://github.com/mapfit/store-locator-iOS-sample/blob/master/StoreLocator-iOS.png)
 
-## Features
+# Store Locator Sample Project
+This sample project is made to demonstrate the usage of [Mapfit iOS SDK](https://github.com/mapfit/iOS-sdk). In the project, 10 addresses are listed and drawn on the map.
 
-- [x] Add locations to your map
-- [x] Display information for each location
+## What is included?
+- Changing the zoom level, center position, rotation and tilt of the map.
+- Placing an address with an entrance marker and building polygon. This feature uses the Mapfit Geocodoer API internally.
+- Listening to marker click events.
 
 ## Requirements
+You will need to obtain Mapfit API key to run the project. You can get it [here](https://mapfit.com/getstarted).
 
-- iOS 11.0+
-- Xcode 9
+## What's next?
+To learn more about the capabilities of Mapfit Android iOS, take a look at the [documentation](https://iOS.mapfit.com/docs).
 
-## Installation
+## License
+Copyright (c) 2018 Mapfit, Inc.
+All Rights Reserved.
 
-#### CocoaPods
-You can use [CocoaPods](http://cocoapods.org/) to install `Mapfit` by adding it to your `Podfile`:
-
-```ruby
-platform :ios, '11.0'
-use_frameworks!
-pod 'Mapfit'
-```
-
-## Set your API Key
-
-[Get an API Key](https://mapfit.com/getstarted)
-```swift
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-      MFTManager.sharedManager.apiKey = "API_KEY"
-      return true
-    }
-}
-
-## Usage example
-
-```swift
-func loadData(){
-//Create a point of interest location
-let sampleLocation = POI(number: "1", address: "450 W 15th Street", city: "Manhattan", state: "NY", zipCode: "10014", primaryPhoneNumber: "(347) 387-7428", secondaryPhoneNumber: "(202) 555-0164", coordinate: CLLocationCoordinate2D(latitude: 40.74405, longitude: -73.99324), neighborhood: "Chelsea")
-
-//add it to your map
-locations.append(sampleLocation)
-}
-```
